@@ -242,6 +242,12 @@ def rotationTwentyfive():
     print(Fore.GREEN+readanimation25)
 
 
+def outroSystem():
+    outroso=open('animation_cli\earthoutro100.txt', 'r')
+    outrosoSystemSys = outroso.read()
+    print(Fore.RED+outrosoSystemSys)
+
+
 
 def earthrotationsystem():
     rotationOne()
@@ -730,7 +736,17 @@ def earthrotationsystem():
     os.system(outs)
     rotationTwentyfive()
     os.system(outs)
+    outroSystem()
 def mainBanner():
-    ServerSystemStart='''
-    '''
+    ServerSystemStart=Fore.MAGENTA+'''
+    ██╗███╗   ██╗███████╗████████╗ █████╗ ██████╗ ██╗██████╗ 
+    ██║████╗  ██║██╔════╝╚══██╔══╝██╔══██╗██╔══██╗██║██╔══██╗'''+Fore.LIGHTGREEN_EX+'''
+    ██║██╔██╗ ██║███████╗   ██║   ███████║██████╔╝██║██████╔╝
+    ██║██║╚██╗██║╚════██║   ██║   ██╔══██║██╔══██╗██║██╔═══╝'''+Fore.LIGHTRED_EX+''' 
+    ██║██║ ╚████║███████║   ██║   ██║  ██║██║  ██║██║██║     
+    ╚═╝╚═╝  ╚═══╝╚══════╝   ╚═╝   ╚═╝  ╚═╝╚═╝  ╚═╝╚═╝╚═╝     
+'''
+    print(ServerSystemStart)
+
 earthrotationsystem()
+mainBanner()
