@@ -4,6 +4,10 @@ import time
 import sys
 from sys import platform
 from colorama import Fore
+import secrets
+import string
+# Setting the working directory
+os.chdir("banner")
 
 if platform == "linux" or platform == "linux2":
     outs="clear"
@@ -11,6 +15,7 @@ if platform == "linux" or platform == "linux2":
 elif platform == "win32":
     outs="cls"
 
+sessionIDhash=str(''.join(secrets.choice(string.ascii_uppercase + string.ascii_lowercase) for i in range(50)))
 
 #Defining a function to call it later while animating the loop.
 
@@ -628,137 +633,27 @@ def earthrotationsystem():
     os.system(outs)
     rotationTwentyfive()
     os.system(outs)
-    rotationOne()
-    os.system(outs)
-    rotationTwo()
-    os.system(outs)
-    rotationThree()
-    os.system(outs)
-    rotationFour()
-    os.system(outs)
-    rotationFive()
-    os.system(outs)
-    rotationFive()
-    os.system(outs)
-    rotationSix()
-    os.system(outs)
-    rotationSeven()
-    os.system(outs)
-    rotationEight()
-    os.system(outs)
-    rotationNine()
-    os.system(outs)
-    rotationTen()
-    os.system(outs)
-    rotationEleven()
-    os.system(outs)
-    rotationTwelve()
-    os.system(outs)
-    rotationThirteen()
-    os.system(outs)
-    rotationThirteen()
-    os.system(outs)
-    rotationFourteen()
-    os.system(outs)
-    rotationFifteen()
-    os.system(outs)
-    rotationSixteen()
-    os.system(outs)
-    rotationSeventeen()
-    os.system(outs)
-    rotationEighteen()
-    os.system(outs)
-    rotationNineteen()
-    os.system(outs)
-    rotationTwenty()
-    os.system(outs)
-    rotationTenwtyone()
-    os.system(outs)
-    rotationTwentytwo()
-    os.system(outs)
-    rotationTwentythree()
-    os.system(outs)
-    rotationTwentyfour()
-    os.system(outs)
-    rotationTwentyfive()
-    os.system(outs)
-    rotationOne()
-    os.system(outs)
-    rotationTwo()
-    os.system(outs)
-    rotationThree()
-    os.system(outs)
-    rotationFour()
-    os.system(outs)
-    rotationFive()
-    os.system(outs)
-    rotationFive()
-    os.system(outs)
-    rotationSix()
-    os.system(outs)
-    rotationSeven()
-    os.system(outs)
-    rotationEight()
-    os.system(outs)
-    rotationNine()
-    os.system(outs)
-    rotationTen()
-    os.system(outs)
-    rotationEleven()
-    os.system(outs)
-    rotationTwelve()
-    os.system(outs)
-    rotationThirteen()
-    os.system(outs)
-    rotationThirteen()
-    os.system(outs)
-    rotationFourteen()
-    os.system(outs)
-    rotationFifteen()
-    os.system(outs)
-    rotationSixteen()
-    os.system(outs)
-    rotationSeventeen()
-    os.system(outs)
-    rotationEighteen()
-    os.system(outs)
-    rotationNineteen()
-    os.system(outs)
-    rotationTwenty()
-    os.system(outs)
-    rotationTenwtyone()
-    os.system(outs)
-    rotationTwentytwo()
-    os.system(outs)
-    rotationTwentythree()
-    os.system(outs)
-    rotationTwentyfour()
-    os.system(outs)
-    rotationTwentyfive()
-    os.system(outs)
-    outroSystem()
 def mainBanner():
     ServerSystemStart=Fore.LIGHTMAGENTA_EX+'''
-            .
-        ──▄█████████████████████████▄──
-        ▄█▀░█░█░█░░░░░░░░░░░░░░░░░░░▀█▄
-        █░░░█░█░█░░░░░░░░░░░░░░█████░░█
-        █░░░█░█░█░░░░░░░░░░░░░░█████░░█
-        █░░░█░█░█░░░░░░░░░░░░░░█████░░█
-        █░░░░░░░░░▄▄▄█████▄▄▄░░░░░░░░░█
-        ███████████▀▀░░░░░▀▀███████████
-        █░░░░░░░██░░▄█████▄░░██░░░░░░░█
-        █░░░░░░░██░██▀░░░▀██░██░░░░░░░█
-        █░░░░░░░██░██░░░░░██░██░░░░░░░█
-        █░░░░░░░██░██▄░░░▄██░██░░░░░░░█
-        █░░░░░░░██▄░▀█████▀░▄██░░░░░░░█
-        █░░░░░░░░▀██▄▄░░░▄▄██▀░░░░░░░░█
-        █░░░░░░░░░░▀▀█████▀▀░░░░░░░░░░█
-        █░░░░░░░░░░░░░░░░░░░░░░░░░░░░░█
-        █░░░░░░░░░░░░░░░░░░░░░░░░░░░░░█
-        █░░░░░░░░░░░░░░░░░░░░░░░░░░░░░█
-        ▀█▄░░░░░░░░░░░░░░░░░░░░░░░░░▄█▀
-        ──▀█████████████████████████▀──
+    .o oOOOOOOOo                                            OOOo
+    Ob.OOOOOOOo  OOOo.      oOOo.                      .adOOOOOOO
+    OboO"""""""""""".OOo. .oOOOOOo.    OOOo.oOOOOOo.."""""""""'OO
+    OOP.oOOOOOOOOOOO "POOOOOOOOOOOo.   `"OOOOOOOOOP,OOOOOOOOOOOB'
+    `O'OOOO'     `OOOOo"OOOOOOOOOOO` .adOOOOOOOOO"oOOO'    `OOOOo
+    .OOOO'  '''+Fore.RED+'''0000'''+Fore.LIGHTMAGENTA_EX+'''      `OOOOOOOOOOOOOOOOOOOOOOOOOO'  '''+Fore.RED+'''0000'''+Fore.LIGHTMAGENTA_EX+'''       `OO
+    OOOOO  '''+Fore.RED+'''0000000'''+Fore.LIGHTMAGENTA_EX+'''        '"OOOOOOOOOOOOOOOO"`    '''+Fore.RED+'''0000000'''+Fore.LIGHTMAGENTA_EX+'''     oOO
+   oOOOOOba. '''+Fore.RED+'''0000'''+Fore.LIGHTMAGENTA_EX+'''           .adOOOOOOOOOOba        '''+Fore.RED+'''0000'''+Fore.LIGHTMAGENTA_EX+'''   .adOOOOo.
+  oOOOOOOOOOOOOOba.    .adOOOOOOOOOO@^OOOOOOOba.     .adOOOOOOOOOOOO
+ OOOOOOOOOOOOOOOOO.OOOOOOOOOOOOOO"`  '"OOOOOOOOOOOOO.OOOOOOOOOOOOOO
+ "OOOO"       "YOoOOOOMOIONODOO"`  .   '"OOROAOPOEOOOoOY"     "OOO"    Telegram: @usgods [Channel]
+    Y           'OOOOOOOOOOOOOO: .oOOo. :OOOOOOOOOOO?'         :`                @godofcom [Personal]
+    :            .oO%OOOOOOOOOOo.OOOOOO.oOOOOOOOOOOOO?         .       Instagram: @6a9th 
+    .            oOOP"%OOOOOOOOoOOOOOOO?oOOOOO?OOOO"OOo         
+                 '%o  OOOO"%OOOO%"%OOOOO"OOOOOO"OOO':                  Don't Share The Repo without credits !
+                      `$"  `OOOO' `O"Y ' `OOOO'  o             Or Else I'd have to RIP your mommas pussy off ! 
+    .                  .     OP"          : o     .
+                              :
+                              .
 
         '''+Fore.MAGENTA+'''
     ██╗███╗   ██╗███████╗████████╗ █████╗ ██████╗ ██╗██████╗ 
@@ -769,6 +664,69 @@ def mainBanner():
     ╚═╝╚═╝  ╚═══╝╚══════╝   ╚═╝   ╚═╝  ╚═╝╚═╝  ╚═╝╚═╝╚═╝     
 '''
     print(ServerSystemStart)
+def sessionConnect():
+    sessionConnected=Fore.RED+'''
+    
+    [1]'''+Fore.CYAN+''' 𝕾𝖊𝖘𝖘𝖎𝖔𝖓 𝕮𝖔𝖓𝖓𝖊𝖈𝖙𝖊𝖉'''+Fore.YELLOW+str(''.join(secrets.choice(string.ascii_uppercase + string.ascii_lowercase) for i in range(50)))+Fore.RED+'''
+
+    [2]'''+Fore.CYAN+''' 𝕾𝖊𝖘𝖘𝖎𝖔𝖓 𝕮𝖔𝖓𝖓𝖊𝖈𝖙𝖊𝖉'''+Fore.YELLOW+str(''.join(secrets.choice(string.ascii_uppercase + string.ascii_lowercase) for i in range(50)))+Fore.RED+'''
+
+    [3]'''+Fore.CYAN+''' 𝕾𝖊𝖘𝖘𝖎𝖔𝖓 𝕮𝖔𝖓𝖓𝖊𝖈𝖙𝖊𝖉'''+Fore.YELLOW+str(''.join(secrets.choice(string.ascii_uppercase + string.ascii_lowercase) for i in range(50)))+Fore.RED+'''
+
+    [4]'''+Fore.CYAN+''' 𝕾𝖊𝖘𝖘𝖎𝖔𝖓 𝕮𝖔𝖓𝖓𝖊𝖈𝖙𝖊𝖉'''+Fore.YELLOW+str(''.join(secrets.choice(string.ascii_uppercase + string.ascii_lowercase) for i in range(50)))+Fore.RED+'''
+
+    [5]'''+Fore.CYAN+''' 𝕾𝖊𝖘𝖘𝖎𝖔𝖓 𝕮𝖔𝖓𝖓𝖊𝖈𝖙𝖊𝖉'''+Fore.YELLOW+str(''.join(secrets.choice(string.ascii_uppercase + string.ascii_lowercase) for i in range(50)))+Fore.RED+'''
+
+    [6]'''+Fore.CYAN+''' 𝕾𝖊𝖘𝖘𝖎𝖔𝖓 𝕮𝖔𝖓𝖓𝖊𝖈𝖙𝖊𝖉'''+Fore.YELLOW+str(''.join(secrets.choice(string.ascii_uppercase + string.ascii_lowercase) for i in range(50)))+Fore.RED+'''
+
+    [7]'''+Fore.CYAN+''' 𝕾𝖊𝖘𝖘𝖎𝖔𝖓 𝕮𝖔𝖓𝖓𝖊𝖈𝖙𝖊𝖉'''+Fore.YELLOW+str(''.join(secrets.choice(string.ascii_uppercase + string.ascii_lowercase) for i in range(50)))+Fore.RED+'''
+
+    [8]'''+Fore.CYAN+''' 𝕾𝖊𝖘𝖘𝖎𝖔𝖓 𝕮𝖔𝖓𝖓𝖊𝖈𝖙𝖊𝖉'''+Fore.YELLOW+str(''.join(secrets.choice(string.ascii_uppercase + string.ascii_lowercase) for i in range(50)))+Fore.RED+'''
+
+    [9]'''+Fore.CYAN+''' 𝕾𝖊𝖘𝖘𝖎𝖔𝖓 𝕮𝖔𝖓𝖓𝖊𝖈𝖙𝖊𝖉'''+Fore.YELLOW+str(''.join(secrets.choice(string.ascii_uppercase + string.ascii_lowercase) for i in range(50)))+Fore.RED+'''
+
+    [10]'''+Fore.CYAN+'''𝕾𝖊𝖘𝖘𝖎𝖔𝖓 𝕮𝖔𝖓𝖓𝖊𝖈𝖙𝖊𝖉'''+Fore.YELLOW+str(''.join(secrets.choice(string.ascii_uppercase + string.ascii_lowercase) for i in range(50)))+'''
+
+
+    '''
+    for sessionInfor in sessionConnected:
+        sys.stdout.write(sessionInfor)
+        sys.stdout.flush()
+        time.sleep(0.01)
+
+def startterminal():
+    data = ["b","u","f","f","e","r","i","n","g"]
+
+    # display with one upper char
+
+    for x in range(len(data)):
+        # remeber lower char
+        old = data[x]
+
+        # replace with upper char
+        data[x] = old.upper()
+
+        # create full text
+        text = "".join(data)
+
+    # display full text
+    sys.stdout.write("\r")
+    sys.stdout.write(text)
+    sys.stdout.flush()
+
+    # put back lower char
+    data[x] = old
+
+    time.sleep(1)
+
+# display without upper chars at the end 
+
+text = "".join(data)
+
+sys.stdout.write("\r")
+sys.stdout.write(text)
+sys.stdout.flush()
 
 earthrotationsystem()
 mainBanner()
+sessionConnect()
